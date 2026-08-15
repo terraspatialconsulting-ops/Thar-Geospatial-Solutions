@@ -278,6 +278,84 @@ section {
 .about-box h3 {
     color: #24543d;
     margin-bottom: 15px;
+} /* =========================
+   SELECTED MAPS
+========================= */
+
+.maps-section {
+    background: #f7f9f8;
+}
+
+.maps-intro {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.maps-intro p {
+    color: #5d6862;
+    font-size: 16px;
+}
+
+.maps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.map-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.map-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.map-card-content {
+    padding: 24px;
+}
+
+.map-card-content h3 {
+    color: #24543d;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.map-card-content p {
+    color: #5d6862;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.map-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Mobile layout */
+
+@media (max-width: 768px) {
+
+    .maps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-card img {
+        height: 250px;
+    }
+
 }
 
 /* =========================
@@ -672,7 +750,100 @@ grounded and practical outputs.
 </div>
 
 </section>
+<!-- =========================
+     SELECTED MAPS
+========================= -->
 
+<section class="maps-section" id="maps">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <small>Selected Work</small>
+            <h2>Maps & Spatial Projects</h2>
+        </div>
+
+        <div class="maps-intro">
+            <p>
+                A selection of geospatial maps developed for environmental,
+                wildlife, ecological and landscape-based research and analysis.
+            </p>
+        </div>
+
+        <div class="maps-grid">
+
+            <!-- Map 1 -->
+            <div class="map-card">
+                <a href="images/bhilwara-study-area.jpg" target="_blank">
+                    <img src="images/bhilwara-study-area.jpg"
+                         alt="Bhilwara Study Area Map">
+                </a>
+
+                <div class="map-card-content">
+                    <h3>Bhilwara Study Area</h3>
+                    <p>
+                        Study-area mapping and spatial visualization for
+                        ecological and biodiversity research.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Map 2 -->
+            <div class="map-card">
+                <a href="images/kaylana-spatial-map.jpg" target="_blank">
+                    <img src="images/kaylana-spatial-map.jpg"
+                         alt="Kaylana Spatial Map">
+                </a>
+
+                <div class="map-card-content">
+                    <h3>Kaylana Spatial Mapping</h3>
+                    <p>
+                        Spatial mapping of landscape features and study
+                        locations around the Kaylana region.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Map 3 -->
+            <div class="map-card">
+                <a href="images/pali-camera-trap-survey.jpg" target="_blank">
+                    <img src="images/pali-camera-trap-survey.jpg"
+                         alt="Pali Camera Trap Survey Map">
+                </a>
+
+                <div class="map-card-content">
+                    <h3>Pali Camera Trap Survey</h3>
+                    <p>
+                        Camera-trap survey design and spatial distribution
+                        of sampling locations in Pali.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Map 4 -->
+            <div class="map-card">
+                <a href="images/pali-study-area.jpg" target="_blank">
+                    <img src="images/pali-study-area.jpg"
+                         alt="Pali Study Area Map">
+                </a>
+
+                <div class="map-card-content">
+                    <h3>Pali Study Area</h3>
+                    <p>
+                        Regional study-area map prepared for environmental
+                        and wildlife-related spatial analysis.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 <!-- =========================
      SERVICES
 ========================= -->
